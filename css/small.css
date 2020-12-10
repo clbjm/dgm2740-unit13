@@ -75,9 +75,32 @@ nav ul li a {
 
 /*----------- MAIN --------------*/
 
-main {
-    padding: 0 2%;
-    min-height: 20rem;
+/* main {
+  min-height: 32rem;
+  padding: 0;
+  margin: 0
+} */
+div {
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  padding: 1rem;
+}
+#weatherforecast {
+  width: 200px
+}
+#weatherforecast {
+  background-color: #003a86;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  padding: 1.5rem 2%;
+  font-size: 1.5rem;
+  color: #fff
+}
+#weatherforecast {
+  display: grid;
+  justify-content: center;
+  padding: 2%;
+  margin: 1rem 0
 }
 
 /*----------- FOOTER --------------*/
@@ -95,3 +118,5 @@ footer {
   display: table;
   clear: both;
 }
+
+

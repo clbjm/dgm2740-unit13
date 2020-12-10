@@ -57,6 +57,11 @@
         display: inline-grid;
         grid-template-rows: auto;
       }
+      #weatherforecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 2%
+      }
 
     /*----------- FOOTER --------------*/
 

@@ -16,7 +16,7 @@ fetch (apiURL)
 .then((weatherInfo) => {
     console.log(weatherInfo);
 
-     document.getElementById("name").textContent = weatherInfo.city.name;
+     document.getElementById("name").textContent = `weather conditions for ${weatherInfo.city.name}`;
 let mylist = weatherInfo.list;
 
 let forcastDayNumber = todayDayNumber;
@@ -32,12 +32,12 @@ for (i = 0; i < mylist.length; i++) {
         theDayName.textContent = weekday[forcastDayNumber];
 
         let theTemp = document.createElement("p");
-        theTemp.textContent = weatherInfo.list[i].main.temp + "F";
+        theTemp.textContent = weatherInfo.list[i].main.temp + `\xB0`;
 
-        let iconcode = weatherInfo.list[i].weather[0].icon;
-        let iconPath = "//openweathermap.org/img/wn/01d@2x.png";
-        let theIcon = document.createElement("img");
-        theIcon.src = iconPath;
+        let iconCode = weatherInfo.list[i].weather[0].icon;
+            let iconPath = "//openweathermap.org/img/w/" + iconCode + ".png";
+            let theIcon = document.createElement("img");
+            theIcon.src = iconPath;
 
         let theDay = document.createElement("div");
         theDay.appendChild(theDayName);

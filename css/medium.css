@@ -30,8 +30,26 @@ padding: .8rem 1rem;
 /*----------- MAIN --------------*/
 div {
     display: inline-grid;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     padding: 1rem;
+  }
+  #weatherforecast {
+    width: 200px
+  }
+  #weatherforecast {
+    background-color: #003a86;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    padding: 1.5rem 2%;
+    font-size: 1.5rem;
+    color: #fff
+  }
+  #weatherforecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+    margin: 1rem 0
   }
 
 
